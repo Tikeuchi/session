@@ -14,9 +14,7 @@
 		<div style="border: 1px; background-color: lightsteelblue;">
 			<h2>Confirm</h2>
 			<div id="comment">
-				<?php
-					echo $_SESSION['comment'];
-				?>
+				
 			</div>
 			<br>
 			<a href="form.php">back</a>

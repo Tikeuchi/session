@@ -1,11 +1,5 @@
 <?php
 	session_start();
-
-	// リダイレクト処理
-	// if(!isset($_SESSION['login_status'])) {
-	// 	header("Location: login.php");
-	// 	exit;
-	// }
 ?>
 
 <!DOCTYPE html>
