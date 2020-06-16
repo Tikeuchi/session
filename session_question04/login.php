@@ -3,9 +3,11 @@
 
 	// ログイン処理
 	if (isset($_POST['username'])) {
-		$_SESSION['username'] = $_POST['username'];
-		header("Location: welcome.php");
-		exit();
+		if ($_POST['username'] !== "") {
+			$_SESSION['username'] = $_POST['username'];
+			header("Location: welcome.php");
+			exit();
+		}
 	};
 ?>
 
