@@ -2,10 +2,7 @@
 	session_start();
 
 	// リダイレクト処理
-	if(!isset($_SESSION['username'])) {
-		header("Location: login.php");
-		exit;
-	}
+
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +16,7 @@
 		・セッション変数に格納したusernameがなければlogin.phpを表示するようにして下さい<br>
 		※このページに直接URLを入力してアクセスした場合、ログイン無しで表示されてしまうことを阻止して下さい
 		<div style="border: 1px; background-color: lightsteelblue;">
-			<h2>Welcome <?php echo $_SESSION['username']; ?> !!</h2>
+			<h2>Welcome 'username' !!</h2>
 			<a href="logout.php">logout</a>
 		</div>
 

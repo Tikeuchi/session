@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	$_SESSION['fruits'] = "apple";
-	unset($_SESSION['fruits']);				// ここを追加すれば正解
+
 ?>
 
 <!DOCTYPE html>

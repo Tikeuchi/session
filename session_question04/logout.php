@@ -1,11 +1,6 @@
 <?php
 	session_start();
 
-	// セッション変数の初期化
-	$_SESSION = array();
-
-	// セッションファイルの削除
-	session_destroy();
 ?>
 
 <!DOCTYPE html>
