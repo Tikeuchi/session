@@ -1,18 +1,5 @@
 <?php
-	session_start();
 
-	// リダイレクト処理
-	if(!isset($_SESSION['username'])) {
-		header("Location: login.php");
-		exit;
-	}
-
-	if (isset($_POST['category'])) {
-		$_SESSION['category'] = $_POST['category'];
-	};
-	if (isset($_POST['comment'])) {
-		$_SESSION['comment'] = $_POST['comment'];
-	};
 ?>
 
 <!DOCTYPE html>
@@ -30,21 +17,21 @@
 		    <table border="1" width="50%">
 		      <tr>
 		        <th width="200px">お名前: </th>
-		        <td><?php echo $_POST['username'] ?></td>
+		        <td><!-- ここに埋め込んで表示する --></td>
 		      </tr>
 					<tr>
 		        <th width="200px">種別: </th>
-		        <td><?php echo $_POST['category'] ?></td>
+		        <td><!-- ここに埋め込んで表示する --></td>
 		      </tr>
 		      <tr>
 		        <th width="200px">お問い合わせ内容: </th>
-		        <td><?php echo $_POST['comment'] ?></td>
+		        <td><!-- ここに埋め込んで表示する --></td>
 		      </tr>
 		    </table>
 		  </div><br>
 
-		  <button onClick="location.href='contact.php'">戻る</button>
-		  <button onClick="location.href='complete.php'">送信する</button>
+		  <button>戻る</button>
+		  <button>送信する</button>
 		</div>
 
 		<script type="text/javascript">

@@ -1,14 +1,5 @@
 <?php
-	session_start();
 
-	// ログイン処理
-	if (isset($_POST['username'])) {
-		if ($_POST['username'] !== "") {
-			$_SESSION['username'] = $_POST['username'];
-			header("Location: welcome.php");
-			exit();
-		}
-	};
 ?>
 
 <!DOCTYPE html>
@@ -25,6 +16,7 @@
 		</form>
 
 		<script type="text/javascript">
+		
 		</script>
 	</body>
 </html>
