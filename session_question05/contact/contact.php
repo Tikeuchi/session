@@ -9,7 +9,7 @@
 		・お名前の入力欄にはログイン中のusernameを入力した状態にして下さい<br>
 		・確認ボタンをクリックしたら、確認ページ（confirm.php）に画面遷移するようにして下さい<br>
 		・また、confirm.phpから移動してきたとき、入力した内容を反映させるようにして下さい<br>
-		・戻るをクリックしたら、welcome.phpを表示するようにしてください
+		・戻るをクリックしたら、welcome.phpを表示するようにして下さい
 		<form action="" method="post" style="border: 1px; background-color: lightsteelblue;">
 			<h2>お問い合わせ</h2>
 
